@@ -1,0 +1,74 @@
+{
+  "Effusion": {
+    "definition": "Pleural effusion is the accumulation of fluid in the pleural space around the lungs, which can compress lung tissue and impair breathing.",
+    "causes": "Common causes include infections (pneumonia, tuberculosis), heart failure, liver or kidney disease, and malignancy.",
+    "symptoms": "Shortness of breath, chest pain (especially on breathing), cough; severe cases cause significant breathing difficulty.",
+    "severity": "Ranges from mild to life-threatening depending on fluid volume and cause.",
+    "risk": "Higher risk when large volume, rapid accumulation, or associated with serious conditions (e.g., cancer, severe infection).",
+    "diagnosis": "Chest X-ray, ultrasound, CT scan; fluid analysis (thoracentesis) to determine cause.",
+    "treatment": "Treat underlying cause; medications; therapeutic drainage (thoracentesis); chest tube for large or recurrent effusions.",
+    "reversibility": "Often reversible if underlying cause is treated; may recur if cause persists.",
+    "complications": "Respiratory distress, infection (empyema), lung compression.",
+    "when_to_seek_help": "Immediate care if severe breathlessness, chest pain, or rapidly worsening symptoms."
+  },
+  "Atelectasis": {
+    "definition": "Atelectasis is the partial or complete collapse of lung tissue, reducing gas exchange.",
+    "causes": "Airway obstruction (mucus plug), shallow breathing post-surgery, tumors, or external compression.",
+    "symptoms": "Shortness of breath, rapid breathing; mild cases may be asymptomatic.",
+    "severity": "Mild to severe depending on extent of lung involved.",
+    "risk": "Higher after surgery, prolonged bed rest, or with airway obstruction.",
+    "diagnosis": "Chest X-ray, CT scan; clinical examination.",
+    "treatment": "Deep breathing exercises, physiotherapy, bronchoscopy (if blockage), oxygen therapy.",
+    "reversibility": "Often reversible with prompt treatment.",
+    "complications": "Infection (pneumonia), reduced oxygenation.",
+    "when_to_seek_help": "Seek care if persistent breathlessness or after surgery with breathing difficulty."
+  },
+  "Infiltration": {
+    "definition": "Pulmonary infiltration refers to substances (fluid, cells) filling lung tissue, often due to infection or inflammation.",
+    "causes": "Commonly pneumonia, inflammatory conditions, or fluid overload.",
+    "symptoms": "Cough, fever, breathlessness, chest discomfort.",
+    "severity": "Variable; can be serious in widespread infection.",
+    "risk": "Higher in elderly, immunocompromised, or untreated infections.",
+    "diagnosis": "Chest X-ray/CT showing opacities; lab tests for infection.",
+    "treatment": "Antibiotics (if bacterial), supportive care, treating underlying cause.",
+    "reversibility": "Usually reversible with proper treatment.",
+    "complications": "Respiratory failure, spread of infection.",
+    "when_to_seek_help": "Fever with breathlessness, worsening cough, or low oxygen symptoms."
+  },
+  "Nodule": {
+    "definition": "A pulmonary nodule is a small, round growth in the lung, usually less than 3 cm.",
+    "causes": "Infections, benign growths, or early-stage tumors.",
+    "symptoms": "Often asymptomatic; sometimes mild cough.",
+    "severity": "Usually low risk if small and stable; risk increases with size and growth.",
+    "risk": "Higher in smokers, older age, or growing nodules.",
+    "diagnosis": "CT scan; follow-up imaging; biopsy if suspicious.",
+    "treatment": "Observation for benign nodules; biopsy/surgery if malignant.",
+    "reversibility": "Benign nodules may remain stable; malignant ones require treatment.",
+    "complications": "Potential progression to cancer if malignant.",
+    "when_to_seek_help": "If nodule grows, symptoms appear, or doctor recommends further evaluation."
+  },
+  "Pneumothorax": {
+    "definition": "Pneumothorax is the presence of air in the pleural space causing partial or complete lung collapse.",
+    "causes": "Spontaneous rupture of lung blebs, trauma, or medical procedures.",
+    "symptoms": "Sudden chest pain, shortness of breath.",
+    "severity": "Can be life-threatening if large or tension pneumothorax.",
+    "risk": "Higher in tall, thin individuals, smokers, or lung disease patients.",
+    "diagnosis": "Chest X-ray, CT scan.",
+    "treatment": "Observation (small cases), needle aspiration, chest tube insertion, surgery if recurrent.",
+    "reversibility": "Often reversible with treatment; recurrence possible.",
+    "complications": "Respiratory distress, tension pneumothorax (emergency).",
+    "when_to_seek_help": "Immediate emergency care for sudden chest pain and breathlessness."
+  },
+  "Mass": {
+    "definition": "A lung mass is a larger abnormal growth (>3 cm) in the lung, potentially malignant.",
+    "causes": "Cancer, infections, or benign tumors.",
+    "symptoms": "Persistent cough, chest pain, weight loss, coughing blood.",
+    "severity": "Potentially severe, especially if malignant.",
+    "risk": "Higher in smokers, older individuals, or family history of cancer.",
+    "diagnosis": "CT scan, PET scan, biopsy.",
+    "treatment": "Depends on cause: surgery, chemotherapy, radiation.",
+    "reversibility": "Depends on diagnosis; benign masses may be managed, malignant require treatment.",
+    "complications": "Cancer spread, respiratory impairment.",
+    "when_to_seek_help": "Immediate evaluation for persistent symptoms or suspicious imaging findings."
+  }
+}

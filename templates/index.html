@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>X-Ray Image Search System</title>
+  <link rel="stylesheet" href="/static/css/style.css"/>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <span class="logo">🫁</span>
+    <div>
+      <h1>X-Ray Image Search System</h1>
+      <p class="subtitle">NIH ChestX-ray14 · CLIP + DenseNet + TF-IDF</p>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab active" onclick="switchTab('text')">🔍 Text Search</button>
+    <button class="tab" onclick="switchTab('image')">🖼️ Image Search</button>
+    <button class="tab" onclick="switchTab('diagnosis')">🩺 Diagnosis Help</button>
+  </div>
+
+  <!-- Text Search -->
+  <div id="text-panel" class="panel active">
+    <p class="hint">Type a disease name e.g. Pneumonia, Cardiomegaly, Hernia</p>
+    <div class="search-bar">
+      <input id="text-input" type="text" placeholder="Search disease..."/>
+      <button onclick="doTextSearch()">Search</button>
+    </div>
+  </div>
+
+  <!-- Image Search -->
+  <div id="image-panel" class="panel">
+    <p class="hint">Upload an X-ray image to find visually similar cases</p>
+
+    <div class="dropzone" id="dropzone"
+         ondragover="event.preventDefault()"
+         ondrop="handleDrop(event)"
+         onclick="document.getElementById('file-input').click()">
+
+      <div id="drop-label">
+        <span style="font-size:48px">📂</span>
+        <p>Drag & drop an X-ray here<br/>or click to browse</p>
+      </div>
+
+      <img id="preview" src="" alt="preview" style="display:none"/>
+    </div>
+
+    <input type="file" id="file-input" accept="image/*"
+           style="display:none" onchange="handleFileSelect(event)"/>
+
+    <button id="img-search-btn"
+            onclick="doImageSearch()"
+            style="display:none;margin-top:16px">
+      Search This X-Ray
+    </button>
+  </div>
+
+  <!-- 🩺 Diagnosis Help -->
+  <div id="diagnosis-panel" class="panel">
+    <p class="hint">
+      Enter patient symptoms (e.g. fever, cough, chest pain, breathing difficulty)
+    </p>
+
+    <div class="search-bar">
+      <textarea id="symptoms-input"
+                placeholder="Enter symptoms..."
+                style="width:100%; height:90px; resize:none;"></textarea>
+    </div>
+
+    <button onclick="doDiagnosis()" style="margin-top:10px">
+      Analyze Symptoms
+    </button>
+  </div>
+
+  <!-- Loading -->
+  <div id="loading" style="display:none" class="loading">
+    <div class="spinner"></div>
+    <p>Analyzing data...</p>
+  </div>
+
+  <!-- Results -->
+  <div id="results-section" style="display:none">
+    <h2 id="results-title">Top Results</h2>
+    <div id="results-grid" class="results-grid"></div>
+  </div>
+
+</main>
+
+<script src="/static/js/main.js"></script>
+</body>
+</html>

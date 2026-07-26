@@ -1,0 +1,44 @@
+# --- Secrets ---
+secret/
+*.env
+.env
+.env.*
+
+# --- Python ---
+__pycache__/
+*.pyc
+venv/
+*.egg-info/
+.pytest_cache/
+
+# --- Node / React build ---
+node_modules/
+medical-xray-ui/build/
+medical-xray-ui/.env
+
+# --- Large / generated model & data files ---
+chexnet.pth
+*.pth
+*.pkl
+outputs/
+preprocessed_images/
+uploads/
+
+# --- Raw dataset dumps (huge, don't version) ---
+images_001/
+images_002/
+images_003/
+images_004/
+images_005/
+images_006/
+images_007/
+images_008/
+images_009/
+images_010/
+images_011/
+images_012/
+
+# --- OS / editor cruft ---
+.DS_Store
+.vscode/
+*.log

@@ -1,18 +1,10 @@
 # Lung Diseases X-Ray Image Retrieval and Symptom-Driven Diagnosis System
 
-An AI-based chest X-ray analysis and diagnosis support system built for **CSE3087 – Information Retrieval and Organization** at VIT.
+An AI-based chest X-ray analysis and diagnosis support system. It combines two modules into a single web platform: an **image-based analysis module** that predicts disease from an uploaded X-ray and retrieves visually similar past cases, and a **symptom-based diagnosis module** that suggests possible diseases from user-entered symptoms.
 
-The system combines two modules into a single web platform: an **image-based analysis module** that predicts disease from an uploaded X-ray and retrieves visually similar past cases, and a **symptom-based diagnosis module** that suggests possible diseases from user-entered symptoms.
+## Overview
 
-## Team
-
-- Ekanath DV (23MIA1023)
-- Mohamed Faizal S (23MIA1133)
-- Rohan Julius Preetan (23MIA1160)
-
-## Abstract
-
-This project presents an AI-based chest X-ray analysis and diagnosis support system designed to assist in medical decision-making. In the **analysis module**, users upload an X-ray image, which is processed using deep learning models to predict the disease and retrieve the top five visually similar X-ray images from the dataset, along with risk level, unified medical insights, and disease FAQ. In the **diagnosis module**, users input symptoms, and the system predicts possible diseases using a knowledge base of symptom-disease relationships, along with relevant medical insights. The system integrates image processing, information retrieval, and text-based analysis into a unified web-based platform for clinical reference and learning.
+Users can upload an X-ray image to get a predicted disease, risk level, the top 5 most visually similar cases from the dataset, and relevant medical insights/FAQ. Alternatively, users can describe symptoms in free text and get a ranked list of possible diseases along with supporting medical information — all backed by a shared knowledge base.
 
 ## System Architecture
 
@@ -30,7 +22,7 @@ Enter Symptoms → Text preprocessing (lowercase, tokenize, remove stopwords)
               → Predicted Possible Diseases → Medical Insights (from Knowledge Base)
 ```
 
-Both modules share a centralized **knowledge base** (disease info, symptoms, medical insights, FAQ) to produce a unified final output: predicted disease, risk level, similar X-rays, medical insights, and disease FAQ.
+Both modules share a centralized **knowledge base** (disease info, symptoms, medical insights, FAQ) to produce a unified final output.
 
 ## Methodology
 
@@ -117,9 +109,3 @@ npm start
 
 - `verify_environment.py` can be used to sanity-check your local setup before running the pipeline.
 - `mod.py` / `test.py` / `test1.png` / `test2.png` — scratch/testing scripts and sample images used during development.
-
-## Course Info
-
-- **Course:** CSE3087 — Information Retrieval and Organization
-- **Program:** M.Tech CSE (Business Analytics), School of Computer Science and Engineering
-- **Institution:** Vellore Institute of Technology (VIT)
